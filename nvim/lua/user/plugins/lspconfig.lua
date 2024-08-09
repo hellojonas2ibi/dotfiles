@@ -1,5 +1,5 @@
 local function setup()
-    require('neodev').setup({})
+    require('lazydev').setup({})
 
     local servers = {
         lua_ls = {
@@ -92,7 +92,7 @@ return {
         { 'williamboman/mason.nvim', config = true},
         'williamboman/mason-lspconfig.nvim',
         'hrsh7th/cmp-nvim-lsp',
-        { 'folke/neodev.nvim', opts = {} }
+        { 'folke/lazydev.nvim', opts = {} }
     },
     config = setup
 }
